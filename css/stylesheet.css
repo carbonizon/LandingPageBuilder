@@ -1,0 +1,67 @@
+/*Custom-Bootstrap*/
+@media (min-width: 768px) {
+    .navbar-nav {
+        float:right !important;
+    }
+    /*.nav > li {
+        border-right: solid 2px #8ec952 !important;
+    }
+    #builder {
+        border-left: solid 2px #8ec952;
+    }
+    .nav > li {
+        border-right: solid 2px #8ec952 !important;
+    }*/
+}
+
+.navbar-default {
+    background-color: #528ec9 !important;
+    border-color: #c9528e !important;
+}
+.navbar {
+    border-width: 0 0 3px !important;
+}
+.nav > li:hover {
+    background-color: #c9528e;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: bold !important;
+}
+.navbar-default .navbar-brand {
+    color: white !important;
+    font-family: 'Bree Serif', sans-serif !important;
+    font-size: 25px !important;
+}
+.activebutton {
+    background-color: #c9528e !important;
+    color: #528ec9;
+}
+/*Divider*/
+.divider {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Body*/
+body {
+    background-image: url('../images/bg.png');
+    overflow-x: hidden;
+}
+/*Header*/
+.buildh1 {
+    text-align: center;
+    color: #C9528E;
+    font-family: 'Bree Serif';
+}
+.buildheader {
+    margin-top:40px;
+    margin-bottom:40px;
+}
+@media (max-width: 400px) {
+    .buildh1 {
+        font-size:30px;
+    }
+}
