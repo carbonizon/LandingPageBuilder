@@ -35,13 +35,6 @@
     </div>
     <!--- End Navigation Bar--->
     
-    <div class="builder container">
-      <div class="buildheader">
-        <h1 class="buildh1">"Build Landing Pages Faster"</h1>
-      </div>
-      <div class="divider"></div>
-    </div>
-    
     <div class="lp container light">
       <!---MAYBE<div class="ribbon-wrapper-green">
         <div class="ribbon-green">Leaked!</div>
@@ -68,10 +61,12 @@
             </div>
           </div>
         </div>
-        <div class="download">
-          <button type="button" class="btn btn-success btn-lg dlbttn to-lock">Click To Download</button>
-          <p class="virusscan">Virus Scan: <span style="color:green;font-weight: bold;">Clean</span> (See <a class="viruslink" href="http://virustotal.com">Here</a>)</p>
-          <p class="lastupdated">Last Updated on <span class="date"></span></p>
+        <div class="viraltoggle">
+          <div class="viralonoff">
+            <button type="button" class="btn btn-success btn-lg dlbttn">Click To Download</button>
+            <p class="virusscan">Virus Scan: <span style="color:green;font-weight: bold;">Clean</span> (See <a class="viruslink" href="http://virustotal.com">Here</a>)</p>
+            <p class="lastupdated">Last Updated on <span class="date"></span></p>
+          </div>
         </div>
         <div class="bodycontent1">
           <div class="row">
@@ -101,5 +96,214 @@
       </div>
     </div>
     
+    <div class="builder container">
+      <div class="buildheader">
+        <img class="buildlogo img-responsive" src="images/logo.png">
+        <h1 class="buildh1">"Build Landing Pages Faster"</h1>
+      </div>
+      <div class="buildcontainer step1">
+        <div class="buildwrapper">
+          <div class="content">
+            <div class="contentheader">
+              <h1>Search Optimization</h1>
+            </div>
+            <div class="content">
+              <form id="nosubmit" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Title:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title" placeholder="Title Goes Here">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputHead" class="col-sm-3 control-label">Head:</label>
+                  <div class="col-sm-9">
+                    <textarea type="text" class="form-control" id="head" placeholder="Anything You'd Like In <head> Tags"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Keywords:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="keywords" placeholder="Keywords (Seperated by comma)">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Description:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="description" maxlength="155" placeholder="Description (Max 155 Char)">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="nextbutton next1 inline">
+          <div class="arrowcontainer">
+            <span class="icon-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="buildcontainer step2">
+        <div class="buildwrapper">
+          <div class="content">
+            <div class="contentheader">
+              <h1>Page Settings</h1>
+            </div>
+            <div class="content">
+              <form id="nosubmit" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputstyle" class="col-sm-3 control-label">Style:</label>
+                  <div class="col-sm-9">
+                    <select id="style" class="form-control">
+                      <option value="dark">Dark</option>
+                      <option value="light">Light</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputvideid" class="col-sm-3 control-label">YT Video:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="videoid" placeholder="Video ID (ex: lIRTvVykOmw)">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Viral Downloader:</label>
+                  <div class="col-sm-9">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="viral" id="viraldlyes" value="download" checked>
+                        Yes - Force users to like, tweet or G+ my website before downloading.
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="viral" id="viraldlno" value="">
+                        No - Allow users to download without Viral Downloader.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">DL Button:</label>
+                  <div class="col-sm-9">
+                    <select id="downloadbutton" class="form-control">
+                      <option value="href">Link To Another Site</option>
+                      <option value="onclick">onclick=" " Function</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group href">
+                  <label for="inputvideid href" class="col-sm-3 control-label">DL Link:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="href" placeholder="https://mediafire.com/">
+                  </div>
+                </div>
+                <div class="form-group onclick">
+                  <label for="inputvideid" class="col-sm-3 control-label">onclick:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="onclick" placeholder="onclick='SomeJavaScriptCode'">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Virus Total:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="virustotal" placeholder="https://www.virustotal.com/">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="backbutton back2 inline">
+          <div class="arrowcontainer">
+            <span class="icon-arrow-left"></span>
+          </div>
+        </div>
+        <div class="nextbutton next2 inline">
+          <div class="arrowcontainer">
+            <span class="icon-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="buildcontainer step3">
+        <div class="buildwrapper">
+          <div class="content">
+            <div class="contentheader">
+              <h1>Content</h1>
+            </div>
+            <div class="content">
+              <form id="nosubmit" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label">Header:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="header" placeholder="Header Goes Here (Max 25 Char)" maxlength="25">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputHead" class="col-sm-3 control-label">Subtext:</label>
+                  <div class="col-sm-9">
+                    <textarea type="text" class="form-control" id="subtext" placeholder="Sub-text below header"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTitle" class="col-sm-3 control-label"># of Bodys:</label>
+                  <div class="col-sm-9">
+                    <select id="bodyparagraph" class="form-control">
+                      <option id="1">1</option>
+                      <option id="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="body1input">
+                  <div class="form-group">
+                    <label for="inputHead" class="col-sm-3 control-label">Title:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="body1title" placeholder="Title of Body">
+                    </div>
+                  </div>  
+                  <div class="form-group">
+                    <label for="inputHead" class="col-sm-3 control-label">Image:</label>
+                      <div class="col-sm-9">
+                      <input type="text" class="form-control" id="body1image" placeholder="Direct Link (300x250)">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputHead" class="col-sm-3 control-label">Body Content:</label>
+                    <div class="col-sm-9">
+                      <textarea type="text" class="form-control" id="body1body" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
+                    </div>
+                  </div>
+                  <div class="body2input">
+                    <div class="form-group">
+                      <label for="inputHead" class="col-sm-3 control-label">Title:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="body2title" placeholder="Title of Body">
+                      </div>
+                    </div>  
+                    <div class="form-group">
+                      <label for="inputHead" class="col-sm-3 control-label">Image:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="body2image" placeholder="Direct Link (300x250)">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputHead" class="col-sm-3 control-label">Body Content:</label>
+                        <div class="col-sm-9">
+                      <textarea type="text" class="form-control" id="body2body" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="backbutton back3 inline">
+          <div class="arrowcontainer">
+            <span class="icon-arrow-left"></span>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
