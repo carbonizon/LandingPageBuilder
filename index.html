@@ -43,12 +43,12 @@
         <div class="header">
           <div class="row">
             <div class="jumbotron">
-              <h1>Hello, World.</h1>
+              <h1 id="headerh1">Hello, World.</h1>
             </div>
             <div class="divider"></div>
           </div>
         </div>
-        <p class="lead centertext subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="lead centertext subtext" id="subtextp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="row videotoggle">
           <div class="videocontainer" style="margin-top:20px; margin-right: auto; margin-left:auto;">
             <iframe class="video" width="550" height="365" src="//www.youtube.com/embed/lIRTvVykOmw?autoplay=0&showinfo=0&controls=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
@@ -68,25 +68,27 @@
             <p class="lastupdated">Last Updated on <span class="date"></span></p>
           </div>
         </div>
-        <div class="bodycontent1">
-          <div class="row">
-            <div class="body1 col-sm-6">
-              <h3 class="bodyheader">Header 1</h3>
-              <p class="bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum dui purus. Etiam at molestie magna. Donec aliquam eu quam gravida lacinia. Praesent condimentum, libero in porttitor pharetra, velit leo pharetra nisl, in blandit sapien sapien ac justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac faucibus neque. Nam euismod sagittis sem eget porta.</p>
-            </div>
-            <div class="body1 col-sm-6">
-              <img class="img-responsive bodyimage" src="http://placehold.it/300x250">
+        <div class="bodycontentdivs">
+          <div class="bodycontent1">
+            <div class="row">
+              <div class="body1 col-sm-6">
+                <h3 class="bodyheader">Header 1</h3>
+                <p class="bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum dui purus. Etiam at molestie magna. Donec aliquam eu quam gravida lacinia. Praesent condimentum, libero in porttitor pharetra, velit leo pharetra nisl, in blandit sapien sapien ac justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac faucibus neque. Nam euismod sagittis sem eget porta.</p>
+              </div>
+              <div class="body1 col-sm-6">
+                <img class="img-responsive bodyimage" src="http://placehold.it/300x250">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="bodycontent2">
-          <div class="row">
-            <div class="body2 col-sm-6">
-              <img class="img-responsive bodyimage" src="http://placehold.it/300x250">
-            </div>
-            <div class="body2 col-sm-6">
-              <h3 class="bodyheader">Header 1</h3>
-              <p class="bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum dui purus. Etiam at molestie magna. Donec aliquam eu quam gravida lacinia. Praesent condimentum, libero in porttitor pharetra, velit leo pharetra nisl, in blandit sapien sapien ac justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac faucibus neque. Nam euismod sagittis sem eget porta.</p>
+          <div class="bodycontent2">
+            <div class="row">
+              <div class="body2 col-sm-6">
+                <img class="img-responsive bodyimage" src="http://placehold.it/300x250">
+              </div>
+              <div class="body2 col-sm-6">
+                <h3 class="bodyheader">Header 1</h3>
+                <p class="bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum dui purus. Etiam at molestie magna. Donec aliquam eu quam gravida lacinia. Praesent condimentum, libero in porttitor pharetra, velit leo pharetra nisl, in blandit sapien sapien ac justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac faucibus neque. Nam euismod sagittis sem eget porta.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -200,9 +202,9 @@
                   </div>
                 </div>
                 <div class="form-group onclick">
-                  <label for="inputvideid" class="col-sm-3 control-label">onclick:</label>
+                  <label for="inputvideid" class="col-sm-3 control-label">onclick="</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="onclick" placeholder="onclick='SomeJavaScriptCode'">
+                    <input type="text" class="form-control" id="onclick" placeholder="Enter JS Function">
                   </div>
                 </div>
                 <div class="form-group">
@@ -238,7 +240,7 @@
                 <div class="form-group">
                   <label for="inputTitle" class="col-sm-3 control-label">Header:</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="header" placeholder="Header Goes Here (Max 25 Char)" maxlength="25">
+                    <input type="text" class="form-control" id="header" placeholder="Header Goes Here (Max 20 Char)" maxlength="20">
                   </div>
                 </div>
                 <div class="form-group">
@@ -260,38 +262,38 @@
                   <div class="form-group">
                     <label for="inputHead" class="col-sm-3 control-label">Title:</label>
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="body1title" placeholder="Title of Body">
+                      <input type="text" class="form-control" id="bodyheader1" placeholder="Title of Body">
                     </div>
                   </div>  
                   <div class="form-group">
                     <label for="inputHead" class="col-sm-3 control-label">Image:</label>
                       <div class="col-sm-9">
-                      <input type="text" class="form-control" id="body1image" placeholder="Direct Link (300x250)">
+                      <input type="text" class="form-control" id="imageurl1" placeholder="Direct Link (300x250)">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="inputHead" class="col-sm-3 control-label">Body Content:</label>
                     <div class="col-sm-9">
-                      <textarea type="text" class="form-control" id="body1body" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
+                      <textarea type="text" class="form-control" id="bodycontent1" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
                     </div>
                   </div>
                   <div class="body2input">
                     <div class="form-group">
                       <label for="inputHead" class="col-sm-3 control-label">Title:</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" id="body2title" placeholder="Title of Body">
+                        <input type="text" class="form-control" id="bodyheader2" placeholder="Title of Body">
                       </div>
                     </div>  
                     <div class="form-group">
                       <label for="inputHead" class="col-sm-3 control-label">Image:</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" id="body2image" placeholder="Direct Link (300x250)">
+                        <input type="text" class="form-control" id="imageurl2" placeholder="Direct Link (300x250)">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputHead" class="col-sm-3 control-label">Body Content:</label>
                         <div class="col-sm-9">
-                      <textarea type="text" class="form-control" id="body2body" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
+                      <textarea type="text" class="form-control" id="bodycontent2" placeholder="Body (Max 425 Char)" maxlength="425"></textarea>
                     </div>
                   </div>
                 </div>
