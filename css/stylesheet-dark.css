@@ -1,6 +1,5 @@
 body {
-    background-image: url('../images/bg.png');
-    overflow-x: hidden;
+    background-color: rgba(1,1,1,0.8);
 }
 h1,h2,h3,h4,h5,h6,p,li {
     color: white;

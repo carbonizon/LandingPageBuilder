@@ -141,6 +141,32 @@
     top:1px;
 }
 
+/*SOURCE*/
+.sourceheader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.sourcecodesubtext {
+    color:white;
+    text-align: center;
+    margin-top:40px;
+}
+xmp { background: black;  white-space: pre-wrap; padding:10px; overflow-y: scroll;}
+.step1source {
+    color: white;
+}
+.step2source {
+    color: white;
+    margin-top:20px;
+}
+.codeoutput {
+    width:600px;
+    height:200px;
+    border-radius:5px;
+    color:#C9528E;
+}
+.codecontainer {
+}
 /*Fonts*/
 @font-face {
 	font-family: 'icomoon';
