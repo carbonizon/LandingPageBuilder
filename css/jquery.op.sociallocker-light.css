@@ -1,3 +1,12 @@
+/*!
+ * Social Locker - v1.4.1, 2014-01-01 
+ * for jQuery: http://onepress-media.com/plugin/social-locker-for-jquery/get 
+ * for Wordpress: http://onepress-media.com/plugin/social-locker-for-wordpress/get 
+ * 
+ * Copyright 2014, OnePress, http://byonepress.com 
+ * Help Desk: http://support.onepress-media.com/ 
+*/
+
 /**
 * Basic styles
 */
@@ -7,8 +16,8 @@
 .onp-sociallocker .onp-sociallocker-text, 
 .onp-sociallocker .onp-sociallocker-timer {
     font: normal normal 400 13px/23px "Arial", "Helvetica", sans-serif;;
-    color: black;
-    font-family: 'Lato';
+    /* color: white; */
+    color: black !important;
 }
 
 .onp-sociallocker iframe {
@@ -41,7 +50,7 @@
 
 .onp-sociallocker {
     position: relative !important;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding: 25px;
     margin: 20px auto;
     max-width: 650px;
@@ -60,7 +69,7 @@
 .onp-sociallocker-text .onp-sociallocker-strong {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;
+    /* font-weight: bold; */
     display: inline-block;
 }
 
@@ -126,6 +135,26 @@
     top: -2px;
 }
 
+/* facebook share button */
+.onp-facebook-share-button {
+    line-height: 1%;
+}
+.onp-sociallocker-vertical .onp-facebook-share-button span {
+    top: 1px;
+}
+.onp-facebook-share-button-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+   background-color: rgba(255,255,255,0); 
+    cursor: pointer;
+}
+.onp-facebook-share-button-overlay:hover {
+    background-color: rgba(255,255,255,0.1);  
+}
+
 /* remove the popup comment box */
 .onp-sociallocker-button .fb-like span,
 .onp-sociallocker-button .fb-like iframe {
@@ -140,11 +169,6 @@
     text-align: center;
     line-height: 13px;
 }
-/* opera fix */
-/**.onp-sociallocker-opera .onp-sociallocker-button-facebook .fb-like {
-    position: relative;
-    top: -1px;
-}*/
 
 /**
 * Overlay for buttons
@@ -168,7 +192,7 @@
 */
 
 .onp-sociallocker .onp-sociallocker-cross {
-    background: url("../img/close.png") 50% 50% no-repeat;
+    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/close.png") 50% 50% no-repeat;
     width: 16px;
     height: 16px;
     opacity: 0.1;
@@ -289,17 +313,19 @@
     margin: 10px auto 15px auto;
     border: 0px;
 
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 .onp-sociallocker-secrets .onp-sociallocker-inner-wrap {
     /* border: 3px solid #fefefe; */
     /* background-color: #f7f7f7; */
-    /* padding: 30px; */
+    padding: 30px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-outer-wrap {
     /* border: 1px solid #e6e6e6; */
     
-
+    -moz-box-shadow: 0px 0px 40px rgba(0,0,0,0.08); 
+    /* -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.08); */     
+    /* box-shadow: 0px 0px 40px rgba(0,0,0,0.08); */  
 }
 .onp-sociallocker-secrets .onp-sociallocker-text,
 .onp-sociallocker-secrets  .onp-sociallocker-timer, 
@@ -316,7 +342,7 @@
     width: 11px;
     height: 14px;
     margin: 0 9px;
-    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+    /* background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/lock-icon.png") 0px 2px no-repeat; */
 }
 @media screen and (max-width: 500px) 
 {
@@ -346,10 +372,14 @@
 }
 .onp-sociallocker-secrets .onp-sociallocker-button .onp-sociallocker-overlay-front {
     background: #eaeaea;
+    background-image: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/secrets-bg.png");
+    background-repeat: repeat-x;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button .onp-sociallocker-overlay-icon {
     height: 34px;
     width: 44px;
+    background-image: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/secrets-bg.png");
+    background-repeat: no-repeat;
     position: absolute;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button .onp-sociallocker-overlay-text {
@@ -372,10 +402,11 @@
 }
 
 .onp-sociallocker-secrets .onp-sociallocker-button-twitter .onp-sociallocker-overlay-front {
-    background: #399ff0 url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/twitter-gd.png") top left repeat-x;
+    background-color: #399ff0;
+    background-position: 0 -102px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-twitter .onp-sociallocker-overlay-icon {
-    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/twitter-icon.png") top left no-repeat; 
+    background-position: 0 -238px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-twitter .onp-sociallocker-overlay-back {
     background: #24b1e5;
@@ -385,10 +416,11 @@
 }
 
 .onp-sociallocker-secrets .onp-sociallocker-button-facebook .onp-sociallocker-overlay-front {
-    background: #46629e url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/facebook-gd.png") top left repeat-x;
+    background-color: #46629e;
+    background-position: 0 0;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-facebook .onp-sociallocker-overlay-icon {
-    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/facebook-icon.png") top left no-repeat; 
+    background-position: 0 -136px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-facebook .onp-sociallocker-overlay-back {
     background: #46629e; 
@@ -398,10 +430,11 @@
 }
 
 .onp-sociallocker-secrets .onp-sociallocker-button-google .onp-sociallocker-overlay-front {
-    background: #494647 url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/google-gd.png") top left repeat-x;
+    background-color: #494647;
+    background-position: 0 -68px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-google .onp-sociallocker-overlay-icon {
-    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/google-icon.png") top left no-repeat; 
+    background-position: 0 -204px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-google .onp-sociallocker-overlay-back {
     background: #494647; 
@@ -411,10 +444,11 @@
 }
 
 .onp-sociallocker-secrets .onp-sociallocker-button-linkedin .onp-sociallocker-overlay-front {
-    background: #286b8d url("../img/linkedin-gd.png") top left repeat-x;
+    background-color: #286b8d;
+    background-position: 0 -34px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-linkedin .onp-sociallocker-overlay-icon {
-    background: url("../img/linkedin-icon.png") top left no-repeat; 
+    background-position: 0 -170px;
 }
 .onp-sociallocker-secrets .onp-sociallocker-button-linkedin .onp-sociallocker-overlay-back {
     background: #286b8d; 
@@ -439,7 +473,7 @@
 
 .onp-sociallocker-dandyish {
     padding: 7px;
-    background: url("../img/bg-2.png");
+    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/dandysh-border.png");
     border-radius: 12px;
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -481,7 +515,7 @@
     width: 11px;
     height: 14px;
     margin: 0 9px;
-    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/lock-icon.png") 0px 2px no-repeat;
 }
 @media screen and (max-width: 500px) 
 {
@@ -585,7 +619,7 @@
     width: 11px;
     height: 14px;
     margin: 0 9px;
-    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+    background: url("https://googledrive.com/host/0B5z7wBpDj5vqeFFKOGpVb2pmMGc/lock-icon.png") 0px 2px no-repeat;
 }
 @media screen and (max-width: 500px) 
 {
@@ -761,14 +795,15 @@
 }
 .onp-facebook-share .onp-facebook-share-count {
     height: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #d3d3d3;
     background-color: #fff;
     margin-left: 62px;
-    font-family: tahoma, sans-serif;
+    font-family: tahoma, sans-serif !important;
     font-size: 11px;
     line-height: 15px;
     padding: 0 4px 0 5px;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 .onp-facebook-share-count-none .onp-facebook-share-icon {
     width: 57px;

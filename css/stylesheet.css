@@ -96,6 +96,7 @@ p, label {
     color:white;
     text-align: center;
     margin-bottom:40px;
+    font-family: 'Roboto Condensed';
 }
 .custom-label {
     width: 100px;
