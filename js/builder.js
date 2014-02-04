@@ -147,7 +147,7 @@ $(document).ready(function(){
     
     
     $('#source').click(function(){
-        
+        $('.builder').hide();
         $('.title').replaceWith('<title class="title">Get Source Code</title>')
         $(this).addClass('activebutton');
         //DECLARATION OF VARIABLES
@@ -195,7 +195,6 @@ $(document).ready(function(){
         
         //APPEND SOURCE replace head then append other
         var doge = '<!DOCTYPE html><html><head class="head"><title class="title">'+title+'</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="css/bootstrap.css" rel="stylesheet"><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script class="javascript lphead" src="js/general.js" type="text/javascript"></script><link class="stylesheet lphead" href="css/stylesheet-'+style+'.css" rel="stylesheet"><link class="sociallockercss lphead" href="css/jquery.op.sociallocker-'+style+'.css" rel="stylesheet"><script class="socialockerjs lphead"src="js/jquery.op.sociallocker.min.js"></script><link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Lato:400,300italic" rel="stylesheet" type="text/css"><meta class="keywords" name="keywords" content="'+keywords+'"><meta class="description" name="description" content="'+description+'">'+head+' </head><body><div class="lp container light"><div class="body col-md-8 col-md-offset-2"><div class="header"><div class="row"><div class="jumbotron"><h1 id="headerh1">'+headerone+'</h1></div><div class="divider"></div></div></div><p class="lead centertext subtext" id="subtextp">'+subtext+'</p><div class="row videotoggle"><div class="videocontainer" style="margin-top:20px;margin-right: auto;margin-left:auto;"><iframe class="video" width="550" height="365" src="//www.youtube.com/embed/'+videoid+'?autoplay=0&showinfo=0&controls=0&modestbranding=1" frameborder="0" allowfullscreen></iframe></div></div><div class="viraltoggle"><div class="viralonoff '+viral+'"><button type="button" class="btn btn-success btn-lg dlbttn" onclick="'+openclickappender+'">Click To Download</button><p class="lastupdated">Last Updated on <span class="date"></span></p></div>'+bodyparas+' </div><div class="divider"></div><p class="footer-left inline">Copyright 2014</p><p class="footer-right inline">Designed by: Carbonizon</p></div></div></div></body></html>'
-        console.log(doge)
         $(".codeoutput").focus(function() {
             var $this = $(this);
             $this.select();
@@ -212,7 +211,7 @@ $(document).ready(function(){
 
         $('#lp').removeClass('activebutton');
         $('#builder').removeClass('activebutton');
-        $('.builder').hide();
+        $('.buildcontainer').hide();
         $('.lp').hide();
         $('.lphead').replaceWith('');
         $('.source').show();
